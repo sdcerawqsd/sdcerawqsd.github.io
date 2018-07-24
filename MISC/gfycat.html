@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+    function setURL(){
+    var dt_value = document.getElementById("dt_id").value;
+    var sjdurl =  "https://www.gfycat.com/cajax/get/"+dt_value;
+
+popup = window.open(sjdurl,"popup"," menubar =0,toolbar =0,location=0, height=900, width=1000"); 
+popup.window.moveTo(950,150); 
+
+    }
+</script>
+</head>
+<body>
+<div style="text-align:left; margin:8px 5px auto;">
+        <label for="dt_id">Please enter a code </label>
+        <input type="Text" id="dt_id" maxlength="100" size="100"/>
+        <input type='button' onclick='setURL()' value='SUBMIT'> 
+</div>
+
+</body>
+</html>

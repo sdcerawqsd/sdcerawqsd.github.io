@@ -1,1 +1,25 @@
-"Hello World" 
+<head>
+<title></title>
+</head>
+<body>
+Go to page
+
+
+<script type="text/javascript">
+function CheckPassword() {
+  var username=document.login.username.value;
+  location.href = username;
+}
+</script>
+
+<form method="post" action="ingen_javascript.htm" 
+  onsubmit="CheckPassword();return false;" name="login">
+<pre>
+<input type="text" name="username" autocapitalize="none" size="100">
+</pre>
+<input type="submit" value="Enter" 
+  onclick="CheckPassword();return false;">
+</form>
+
+</body>
+</html>
